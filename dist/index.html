@@ -1,26 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#401523">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff0f5">
 <title>26 Years of Love · Mom & Dad</title><meta name="description" content="For Mom and Dad, on your 26th anniversary. A little celebration of a love that feels like home.">
 <link rel="stylesheet" href="styles.css"><script src="anniversary.js" defer></script>
 </head>
 <body>
+<section class="welcome" id="welcome" aria-labelledby="welcome-title">
+  <div class="welcome-frame">
+    <span class="welcome-flower" aria-hidden="true">✿</span>
+    <p class="eyebrow">A little surprise, a lot of love</p>
+    <div class="welcome-emblem" aria-hidden="true">26<span>years</span></div>
+    <h1 id="welcome-title">For our dearest<br><em>Mom &amp; Dad.</em></h1>
+    <p>Some love stories deserve<br>their very own celebration.</p>
+    <button class="button gold" type="button" id="enter-celebration">Open your surprise <span aria-hidden="true">♡</span></button>
+    <p class="welcome-signature">With love, Tanvi &amp; Kashvi</p>
+    <span class="welcome-flourish" aria-hidden="true">✧ &nbsp; ♡ &nbsp; ✧</span>
+  </div>
+</section>
+<noscript><style>#welcome{display:none}#celebration[hidden]{display:block}</style></noscript>
+<div id="celebration" hidden>
 <div class="progress" aria-hidden="true"></div>
 <header class="navigation"><a class="brand" href="#home">M <span>&</span> D <i> / 26 YEARS</i></a><nav aria-label="Main navigation"><a href="#love">A little love</a><a href="#letter">Your surprise</a></nav></header>
 <main>
 <section class="hero" id="home" aria-labelledby="title">
 <div class="hero-border" aria-hidden="true"></div><div class="sparkles" aria-hidden="true">✦</div>
-<div class="hero-copy"><p class="eyebrow">A love worth celebrating</p><div class="anniversary-number" aria-label="26 years">26<span aria-hidden="true">th</span></div><p class="anniversary-label">WEDDING ANNIVERSARY</p><h1 id="title">To our forever favourites,<br><em>Mom & Dad.</em></h1><p class="intro">Twenty-six years of choosing each other.<br>A lifetime of giving us a place to belong.</p><a class="button gold" href="#letter">We made something for you <span aria-hidden="true">♡</span></a><p class="tiny-note">Made with love, by your Tanvi &amp; Kashvi</p></div>
+<div class="hero-copy"><p class="eyebrow">A love worth celebrating</p><div class="anniversary-number" aria-label="26 years">26<span aria-hidden="true">th</span></div><p class="anniversary-label">WEDDING ANNIVERSARY</p><h1 id="title" tabindex="-1">To our forever favourites,<br><em>Mom & Dad.</em></h1><p class="intro">Twenty-six years of choosing each other.<br>A lifetime of giving us a place to belong.</p><a class="button gold" href="#letter">We made something for you <span aria-hidden="true">♡</span></a><p class="tiny-note">Made with love, by your Tanvi &amp; Kashvi</p></div>
 <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="art-star star-one">✧</span><span class="art-star star-two">✦</span><span class="art-star star-three">✧</span><div class="rings"><div class="ring ring-one"></div><div class="ring ring-two"></div></div><div class="art-caption">Two hearts.<br><em>One beautiful life.</em></div><div class="art-bottom">TOGETHER IS A BEAUTIFUL PLACE TO BE</div></div>
 <div class="hero-foot"><span>A little keepsake. A whole lot of love.</span><a href="#love">Take a moment. Stay a little.</a></div>
 </section>
-<div class="ribbon" aria-hidden="true"><span>26 years of togetherness</span>✧<span>A lifetime of love</span>✧<span>Always, Mom & Dad</span>✧<span>26 years of togetherness</span></div>
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track"><div class="ribbon-group"><span>26 years of togetherness</span><span>✧</span><span>A lifetime of love</span><span>✧</span><span>Always, Mom &amp; Dad</span><span>✧</span></div><div class="ribbon-group"><span>26 years of togetherness</span><span>✧</span><span>A lifetime of love</span><span>✧</span><span>Always, Mom &amp; Dad</span><span>✧</span></div></div></div>
 <section class="language-section section" id="love" aria-labelledby="moke-title"><div class="section-note"><span class="small-flower" aria-hidden="true">✳</span><p class="eyebrow">A little closer to the heart</p><p>Some feelings sound even<br>more beautiful in your language.</p></div><div class="language-copy"><p class="native" lang="tcy">ಮೋಕೆ</p><h2 id="moke-title">Moke <span>/ love, in Tulu</span></h2><p>One little word. Everything you mean to us.</p><p class="language-message">This page is in English, but its heart speaks your language. Here’s to more laughter, more happiness, and a love that always feels like home.</p><span class="handwritten">With all our moke, always.</span></div></section>
 <section class="reasons-section section" aria-labelledby="reasons-title"><div class="reasons-heading"><p class="eyebrow">The little things are the big things</p><h2 id="reasons-title">So much to be<br><em>grateful for.</em></h2><p>26 little thank-yous.<br>One for every year of your love.</p></div><div class="reason-card"><span class="quote-mark" aria-hidden="true">“</span><p id="reason-text" aria-live="polite">For making home a feeling, not just a place.</p><div class="reason-controls"><span id="reason-counter">01 / 26</span><button type="button" id="next-reason">Another little thank-you <span aria-hidden="true">＋</span></button></div></div></section>
 <section class="letter-section section" id="letter" aria-labelledby="letter-title"><p class="eyebrow">Something just for you</p><h2 id="letter-title">If love had a home,<br><em>it would be you two.</em></h2><p>There are things we don’t say often enough.<br>Today felt like the perfect day.</p><button class="envelope" id="open-letter" type="button" aria-haspopup="dialog"><span class="envelope-fold" aria-hidden="true"></span><span class="seal" aria-hidden="true">♡</span><span class="envelope-to">To Mom & Dad</span><span class="envelope-action">Open your letter</span></button><p class="letter-footnote">A little note from your children, with very full hearts.</p></section>
 <section class="final-section" aria-labelledby="wish-title"><span class="final-star" aria-hidden="true">✦</span><p class="eyebrow">The best is still ahead</p><h2 id="wish-title">26 years down.<br><em>Forever to go.</em></h2><p>May the years ahead be gentle, the laughter be loud,<br>and the love keep finding new reasons to grow.</p><button class="button gold" id="celebrate" type="button">Let’s celebrate you two <span aria-hidden="true">✦</span></button><p class="celebration-status" role="status" id="celebration-status"></p><footer>Happy 26th anniversary, Mom & Dad.<span>Made with all our love · Tanvi &amp; Kashvi ♡</span></footer></section>
 </main>
 <dialog id="letter-dialog" aria-labelledby="dialog-title"><button class="close" type="button" aria-label="Close letter">×</button><div class="letter-paper"><p class="eyebrow">A letter from the heart</p><h2 id="dialog-title">Dear Mom & Dad,</h2><p>Happy 26th anniversary to our favourite two people.</p><p>When we think of love, we think of you. Not just the big celebrations, but the small, everyday ways you care. The ways you show up. The ways you make our family feel like home.</p><p>Twenty-six years together is so much more than a number. It is a life you have built, side by side. And we feel lucky to be a part of it.</p><p>We hope today reminds you how deeply you are loved, how much you mean to us, and how beautiful your togetherness is.</p><p>Here’s to more smiles, more little adventures, and many, many more years of holding on to each other.</p><p class="signature">With all our love — and moke,<br><strong>Your Tanvi &amp; Kashvi ♡</strong></p></div></dialog>
+</div>
 <div id="confetti" aria-hidden="true"></div>
 </body></html>

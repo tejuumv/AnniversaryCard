@@ -1,3 +1,13 @@
+const welcome = document.querySelector('#welcome');
+const celebration = document.querySelector('#celebration');
+document.querySelector('#enter-celebration').addEventListener('click', () => {
+ celebration.hidden = false;
+ welcome.hidden = true;
+ celebration.classList.add('just-opened');
+ window.scrollTo({top: 0, behavior: 'instant'});
+ document.querySelector('#title').focus({preventScroll: true});
+ updateProgress();
+});
 const reasons = [
 'For making home a feeling, not just a place.',
 'For the love that makes ordinary days feel special.',
@@ -9,11 +19,11 @@ const reasons = [
 'For a togetherness worth celebrating every day.',
 'For the comfort of knowing we belong.',
 'For a love that feels steady in a changing world.',
-'For every reason you have given me to smile.',
+'For every reason you have given us to smile.',
 'For the beautiful family we get to call ours.',
 'For teaching us that love is something you do.',
 'For the way your happiness becomes our happiness.',
-'For all the care we noticed, and all the care I didn’t.',
+'For all the care we noticed, and all the care we didn’t.',
 'For making the word “home” so full of meaning.',
 'For the little joys that become our biggest treasures.',
 'For the gift of being your children.',
@@ -46,7 +56,7 @@ document.querySelector('#celebrate').addEventListener('click', () => {
  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
  for(let i = 0; i < 75; i++) {
   const piece = document.createElement('span'); piece.className = 'confetti-piece'; piece.textContent = ['♥','✦','✧','●'][i % 4];
-  piece.style.cssText = `--left:${Math.random()*100}%;--duration:${3+Math.random()*3}s;--size:${10+Math.random()*15}px;--color:${['#e6c18c','#b55a73','#f3d7a9','#d5969e'][i%4]};--drift:${Math.random()*240-120}px;animation-delay:${Math.random()*.6}s`;
+  piece.style.cssText = `--left:${Math.random()*100}%;--duration:${3+Math.random()*3}s;--size:${10+Math.random()*15}px;--color:${['#d57c9c','#efb3c7','#b86b8b','#f4d1df'][i%4]};--drift:${Math.random()*240-120}px;animation-delay:${Math.random()*.6}s`;
   field.append(piece);
  }
  celebrationTimer = setTimeout(() => field.replaceChildren(), 7000);
